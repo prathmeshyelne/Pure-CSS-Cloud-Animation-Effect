@@ -1,0 +1,78 @@
+body{
+	background-color:skyblue;
+	overflow-x:hidden;
+}
+#background{
+	margin-top:100px;
+}
+.cloud{
+	background:#fff;
+	-webkit-border-radius:100px;
+	-moz-border-radius:100px;
+	border-radius:100px;
+	height:120px;
+	width:350px;
+	position:relative;
+	<!--
+	-webkit-box-shadow:0 1px 5px rgba(0,0,0,1);
+	-moz-box-shadow::0 1px 5px rgba(0,0,0,1);
+	box-shadow::0 1px 5px rgba(0,0,0,1);
+	-->
+}
+.cloud:after, .cloud:before{
+	background:#fff;
+	content:'';
+	position:absolute;
+	z-index:-1;
+}
+.cloud:after{
+	-webkit-border-radius:100px;
+	-moz-border-radius:100px;
+	border-radius:100px;
+	height:100px;
+	width:100px;
+	top:-50px;
+	left:50px;
+}
+.cloud:before{
+	-webkit-border-radius:100px;
+	-moz-border-radius:100px;
+	border-radius:100px;
+	height:180px;
+	width:180px;
+	top:-90px;
+	right:50px;
+}
+.cloud1{
+	-webkit-transform:scale(0.75);
+	-moz-transform:scale(0.75);
+	transform:scale(0.75);
+	-webkit-animation:animationCloud 10s linear infinite;
+	-moz-animation:animationCloud 10s linear infinite;
+	animation:animationCloud 10s linear infinite;
+}
+.cloud2{
+	-webkit-transform:scale(0.35);
+	-moz-transform:scale(0.35);
+	transform:scale(0.35);
+	-webkit-animation:animationCloud 10s linear infinite;
+	-moz-animation:animationCloud 10s linear infinite;
+	animation:animationCloud 10s linear infinite;
+}
+.cloud3{
+	-webkit-transform:scale(0.55);
+	-moz-transform:scale(0.55);
+	transform:scale(0.55);
+	-webkit-animation:animationCloud 10s linear infinite;
+	-moz-animation:animationCloud 10s linear infinite;
+	animation:animationCloud 10s linear infinite;
+}
+@keyframes animationCloud{
+	0%{
+		margin-left:-500px;	
+	}
+	100%{
+		margin-left:100%;	
+	}
+
+}
